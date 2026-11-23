@@ -28,6 +28,6 @@ document.querySelectorAll('a[href*="wa.me/919229588102"]').forEach(link=>{
 });
 const heroImage=document.querySelector('.portrait-frame');
 heroImage.setAttribute('role','link');heroImage.setAttribute('tabindex','0');heroImage.setAttribute('aria-label','Message LUCKY Studio on WhatsApp');
-const heroWhatsAppUrl=`https://wa.me/919973467801?text=${encodeURIComponent(whatsappMessage)}`;
+const heroWhatsAppUrl=`https://wa.me/919229588102?text=${encodeURIComponent(whatsappMessage)}`;
 const openHeroWhatsApp=()=>gtag_report_conversion(heroWhatsAppUrl);
 heroImage.setAttribute('onclick','return gtag_report_conversion(heroWhatsAppUrl)');heroImage.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openHeroWhatsApp()}});
